@@ -1,5 +1,4 @@
 import whoislib from 'whois-json'
-import utf8 from 'utf8'
 
 class whoisController{
 

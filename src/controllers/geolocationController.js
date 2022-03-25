@@ -1,5 +1,4 @@
 import ipdetails  from 'node-ip-details'
-import utf8 from 'utf8'
 
 class geolocationController{
 
@@ -9,7 +8,7 @@ class geolocationController{
 
         try{
             const ipInformantion = await ipdetails.initialise({ip: ip}).allInformation()
-            //console.log(utf8.decode(ipInformantion.internetProvider))
+          
             return response.status(200).json(ipInformantion)
         }
         catch(error){
