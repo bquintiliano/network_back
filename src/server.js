@@ -12,8 +12,8 @@ app.use(cors())
 routes(app)
 
 const options = {
-    key: fs.readFileSync('/etc/letsencrypt/live/onemessage.quintiliano.tk/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/onemessage.quintiliano.tk/fullchain.pem')
+    key: fs.readFileSync('/etc/letsencrypt/live/network.quintiliano.tk/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/network.quintiliano.tk/fullchain.pem')
   };
 
   https.createServer(options, app).listen(3002, () => console.log("Servidor UP"))
